@@ -13,10 +13,10 @@ public class SsconfigClientApplication {
     }
 }
 
-@RestController("info")
+@RestController
 class Controller {
 
-    @GetMapping
+    @GetMapping("info")
     public String info(@Value("${api.friend}") String apiFriend) {
         return apiFriend;
     }
